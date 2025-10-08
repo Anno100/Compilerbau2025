@@ -1,0 +1,16 @@
+# .gitignore
+# Ignoriere alles, aber erlaubte Dateien: Main.ts und Main.js (in beliebigen Unterverzeichnissen)
+# sowie die .gitignore selbst
+
+# Ignore everything
+*
+
+# But do not ignore directories (so we can re-allow files inside them)
+!*/
+
+# Allow any file named Main.ts or Main.js anywhere in the tree
+!src/Main.ts
+!build/Main.js
+
+# Keep the gitignore tracked
+!.gitignore
