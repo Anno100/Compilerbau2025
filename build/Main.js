@@ -11,6 +11,7 @@ class TokenizeJavaScript {
         let linecounter = 0;
         this.tokenized.forEach(e => {
             let p = document.createElement('p');
+            let br = document.createElement('br');
             p.setAttribute('style', 'display: inline; margin: 5px; padding: 5px; border: 1px solid black;');
             let res = e;
             res = e == '$LINE$' ? `LINE ${++linecounter}` : res;
@@ -32,6 +33,7 @@ class TokenizeJavaScript {
             res = e == '.' ? 'DOT' : res;
             p.innerHTML = res;
             document.body.appendChild(p);
+            document.body.appendChild(br);
         });
     }
     addSpaceBeforeAndAfterSymbols(text) {
