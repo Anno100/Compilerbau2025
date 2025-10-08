@@ -11,6 +11,7 @@
 # Allow any file named Main.ts or Main.js anywhere in the tree
 !src/Main.ts
 !build/Main.js
+!Editor.html
 
 # Keep the gitignore tracked
 !.gitignore
